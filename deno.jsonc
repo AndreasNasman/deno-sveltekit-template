@@ -13,13 +13,16 @@
     "typescript": "npm:typescript@^5.0.0",
     "vite": "npm:vite@^5.0.3"
   },
+  "exclude": [".svelte-kit/"],
   "nodeModulesDir": "auto",
   "tasks": {
     "dev": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
-    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+    "check": "deno check . && svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "format": "deno fmt --unstable-component",
+    "lint": "deno lint"
   },
   "version": "0.0.1"
 }
