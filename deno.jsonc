@@ -1,0 +1,21 @@
+{
+  "$schema": "https://deno.land/x/deno/cli/schemas/config-file.v1.json",
+  "imports": {
+    "@sveltejs/adapter-auto": "npm:@sveltejs/adapter-auto@^3.0.0",
+    "@sveltejs/kit": "npm:@sveltejs/kit@^2.0.0",
+    "@sveltejs/vite-plugin-svelte": "npm:@sveltejs/vite-plugin-svelte@^4.0.0",
+    "svelte": "npm:svelte@^5.0.0",
+    "svelte-check": "npm:svelte-check@^4.0.0",
+    "typescript": "npm:typescript@^5.0.0",
+    "vite": "npm:vite@^5.0.3"
+  },
+  "nodeModulesDir": "auto",
+  "tasks": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+  },
+  "version": "0.0.1"
+}
