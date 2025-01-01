@@ -16,12 +16,12 @@
   "exclude": [".svelte-kit/"],
   "nodeModulesDir": "auto",
   "tasks": {
-    "dev": "vite dev",
     "build": "vite build",
-    "preview": "vite preview",
     "check": "deno check . && svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "dev": "vite dev",
     "format": "deno fmt --unstable-component",
-    "lint": "deno lint"
+    "lint": "deno lint",
+    "preview": "vite preview"
   },
   "version": "0.0.1"
 }
