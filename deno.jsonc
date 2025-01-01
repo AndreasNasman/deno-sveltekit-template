@@ -1,5 +1,8 @@
 {
   "$schema": "https://deno.land/x/deno/cli/schemas/config-file.v1.json",
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "dom.asynciterable", "deno.ns"]
+  },
   "imports": {
     "@sveltejs/adapter-auto": "npm:@sveltejs/adapter-auto@^3.0.0",
     "@sveltejs/kit": "npm:@sveltejs/kit@^2.0.0",
