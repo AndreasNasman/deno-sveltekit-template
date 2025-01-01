@@ -1,6 +1,7 @@
 # sv
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Everything you need to build a Svelte project, powered by
+[`sv`](https://github.com/sveltejs/cli).
 
 ## Creating a project
 
@@ -16,7 +17,8 @@ deno run -A npm:sv create my-app
 
 ## Developing
 
-Once you've created a project and installed dependencies with `deno install --allow-scripts`, start a development server:
+Once you've created a project and installed dependencies with
+`deno install --allow-scripts`, start a development server:
 
 ```bash
 deno run dev
@@ -35,4 +37,5 @@ deno run build
 
 You can preview the production build with `deno run preview`.
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+> To deploy your app, you may need to install an
+> [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
